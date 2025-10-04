@@ -1,7 +1,0 @@
-import { redirect } from "next/navigation";
-
-const Notes = async () => {
-  return redirect("/notes/filter/All");
-};
-
-export default Notes;
