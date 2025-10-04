@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 
-const Notes = async () => {
+const Filter = () => {
   return redirect("/notes/filter/All");
 };
 
-export default Notes;
+export default Filter;
