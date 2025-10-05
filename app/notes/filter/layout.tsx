@@ -1,13 +1,13 @@
-import React from "react";
+import css from "./layout.module.css";
 interface Props {
   children: React.ReactNode;
   sidebar: React.ReactNode;
 }
 const Layout = ({ children, sidebar }: Props) => {
   return (
-    <div>
-      {sidebar}
-      {children}
+    <div className={css.layout}>
+      <aside className={css.sidebar}>{sidebar}</aside>
+      <main className={css.main}>{children}</main>
     </div>
   );
 };
